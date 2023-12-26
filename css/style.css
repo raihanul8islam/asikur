@@ -1,0 +1,153 @@
+/* common css starts */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'PT Sans', sans-serif; */
+}
+li ,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1110px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.text-center{
+    text-align: center;
+}
+.button{
+    color: #353535;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 180%; /* 32.4px */
+    border-radius: 20px;
+    border: 1px solid #000;
+    padding: 17px 44px;
+    /* margin-top: 62px; */
+}
+/* common css ends */
+
+/* nav css starts */
+#primary_nav{
+    margin-top: 13px;
+}
+#primary_nav .row{
+    justify-content: space-between;
+    align-items: center;
+}
+#primary_nav ul li a{
+    color: #353535;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 200%; /* 30px */
+    padding: 5px 28px;
+    display: inline-block;
+    position: relative;
+}
+#primary_nav ul li a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background: #353535;
+    right: 0;
+    bottom: 0;
+    transition: .5s;
+}
+#primary_nav ul li:hover a::after{
+    width: 100%;
+    left: 0;
+}
+#primary_nav ul li a::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    background: #353535;
+    left: 0;
+    top: 0;
+    transition: .5s;
+}
+#primary_nav ul li:hover a::before{
+    width: 100%;
+    right: 0;
+}
+/* nav css ends */
+/* about css starts */
+#about{
+    background: linear-gradient(95deg, #FC0 -21.46%, #FAFFCB 112.13%, #FAFFCB 112.13%);
+    margin-top: 20px;
+    height: 556px;
+}
+#about .image{
+    padding-top: 26px;
+    padding-left: 133px;
+    width: 50%;
+}
+#about .about_me{
+    width: 50%;
+    
+}
+#about .about_me h2{
+    padding-top: 78px;
+    color: #353535;
+    font-size: 50px;
+    font-style: normal;
+   font-weight: 700;
+    line-height: normal;
+}
+#about .about_me p{
+    padding-top: 26px;
+    padding-right: 165px;
+    color: #353535;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 190%; /* 38px */
+    margin-bottom: 62px;
+}
+/* about css ends */
+/* rup css starts */
+#rup{
+    margin-top: 150px;
+}
+#rup .card img{
+    margin-top: 39px;
+}
+#rup .card{
+    width: 350px;
+    height: 367px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.08);
+    margin-right: 20px;
+}
+#rup .card h4{
+    margin: 18px 29px;
+    color: #353535;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 180%; /* 39.6px */
+}
+#rup .card p{
+    color: #7A7A7A;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 190%; /* 30.4px */
+    padding: 0 47px;
+    margin-bottom: 57px;
+}
+/* rup css ends */
